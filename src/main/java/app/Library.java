@@ -34,6 +34,21 @@ public class Library {
         System.out.println("Книга с кодом: " + code + " не найдена");
     }
 
+    public void findBookByTitle (String title) {
+        int matches = 0;
+
+        for (Book book : bookList) {
+            if (book.getTitle().toLowerCase().contains(title.toLowerCase())) {
+                System.out.println(book);
+                matches++;
+            }
+        }
+
+        if(matches == 0) {
+            System.out.println("Книга с названием: '" + title + "' не найдена");
+        }
+    }
+
     public void showBooks() {
         for (Book b : bookList) {
             System.out.println(b);

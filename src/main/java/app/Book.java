@@ -5,6 +5,10 @@ public class Book {
     private String author;
     private int code;
 
+    public String getTitle () {
+        return title;
+    }
+
     public void setTitle(String title) {
         this.title =  title;
     }

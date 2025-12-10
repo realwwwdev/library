@@ -8,10 +8,13 @@ public class Main {
         library.addBook("Мастер и Маргарита", "Булгаков", 10581);
         library.showBooks();
 
-        library.changeTitle(10724, "Война и мир [2 издание]");
+        library.changeTitle(10936, "Война и мир [2 издание]");
         library.showBooks();
 
         library.deleteBook(10724);
         library.showBooks();
+
+        System.out.println("\nПоиск книг по слову 'мир':");
+        library.findBookByTitle("мир");
     }
 }
