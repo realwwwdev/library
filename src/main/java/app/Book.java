@@ -34,6 +34,8 @@ public class Book {
         return genres;
     }
 
+    public List<String> getGenres() {return genres;}
+
     public String toString () {
         return "Название: " + title +
                 " | Автор: " + author +

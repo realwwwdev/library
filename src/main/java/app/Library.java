@@ -64,6 +64,24 @@ public class Library {
         }
     }
 
+    public void findBooksByGenre (String genre) {
+        int matches = 0;
+
+        for (Book book : bookList) {
+            for (String g : book.getGenres()) {
+                if(g.equalsIgnoreCase(genre)) {
+                    System.out.println(book);
+                    matches++;
+                    break;
+                }
+            }
+        }
+
+        if(matches == 0) {
+            System.out.println("Список книг с жанром: '" + genre + "'");
+        }
+    }
+
     public void showBooks() {
         for (Book b : bookList) {
             System.out.println(b);
