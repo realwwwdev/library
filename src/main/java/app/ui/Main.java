@@ -1,4 +1,6 @@
-package app;
+package app.ui;
+
+import app.service.Library;
 
 import java.util.Arrays;
 
@@ -15,6 +17,12 @@ public class Main {
 
         System.out.println("\nПоиск книг по автору 'Булгаков':");
         library.findBooksByAuthor(("булгаков"));
+
+        System.out.println("\nПоиск книг по жанру: 'Роман'");
+        library.findBooksByGenre("Роман");
+        System.out.println("\nПоиск книг по жанру: 'Социальный'");
+        library.findBooksByGenre("Социальный");
+
 
         library.deleteBook(10724);
     }

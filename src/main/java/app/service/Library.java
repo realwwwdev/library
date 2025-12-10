@@ -1,4 +1,6 @@
-package app;
+package app.service;
+
+import app.model.Book;
 
 import java.util.ArrayList;
 import java.util.List;
