@@ -1,9 +1,19 @@
 package app;
 
+import java.util.List;
+
 public class Book {
     private String title;
     private String author;
     private int code;
+    private List<String> genres;
+
+    public Book (String title, String author, int code, List<String> genres) {
+        this.title = title;
+        this.author = author;
+        this.code = code;
+        this.genres = genres;
+    }
 
     public String getTitle () {
         return title;
@@ -20,11 +30,8 @@ public class Book {
     public String getAuthor () {
         return author;
     }
-
-    public Book (String title, String author, int code) {
-        this.title = title;
-        this.author = author;
-        this.code = code;
+    public List<String> genres() {
+        return genres;
     }
 
     public String toString () {

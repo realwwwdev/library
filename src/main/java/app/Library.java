@@ -6,8 +6,8 @@ import java.util.List;
 public class Library {
     private List<Book> bookList = new ArrayList<>();
 
-    public void addBook(String title, String author, int code) {
-        Book book = new Book(title, author, code);
+    public void addBook(String title, String author, int code, List<String> genres) {
+        Book book = new Book(title, author, code, genres);
         bookList.add(book);
     }
 
@@ -18,8 +18,8 @@ public class Library {
                 System.out.println("Название обновлено");
                 return;
             }
-            System.out.println("Книга с кодом: " + code + " не найдена");
         }
+        System.out.println("Книга с кодом: " + code + " не найдена");
 
     }
 
