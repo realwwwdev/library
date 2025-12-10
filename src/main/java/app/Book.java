@@ -17,6 +17,10 @@ public class Book {
         return code;
     }
 
+    public String getAuthor () {
+        return author;
+    }
+
     public Book (String title, String author, int code) {
         this.title = title;
         this.author = author;

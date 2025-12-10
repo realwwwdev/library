@@ -49,6 +49,21 @@ public class Library {
         }
     }
 
+    public void findBooksByAuthor (String author) {
+        int matches = 0;
+
+        for (Book book : bookList) {
+            if (book.getAuthor().toLowerCase().contains(author.toLowerCase())) {
+            System.out.println(book);
+            matches++;
+            }
+        }
+
+        if(matches == 0) {
+            System.out.println("Книги автора: '" + author + "' не найдены");
+        }
+    }
+
     public void showBooks() {
         for (Book b : bookList) {
             System.out.println(b);
