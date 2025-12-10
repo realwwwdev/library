@@ -11,6 +11,18 @@ public class Library {
         bookList.add(book);
     }
 
+    public void changeTitle(int code, String newTitle) {
+        for (Book book : bookList) {
+            if (book.getCode() == code) {
+                book.setTitle(newTitle);
+                System.out.println("Название обновлено");
+                return;
+            }
+            System.out.println("Книга с кодом: " + code + " не найдена");
+        }
+
+    }
+
     public void showBooks() {
         for (Book b : bookList) {
             System.out.println(b);

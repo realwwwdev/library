@@ -5,6 +5,14 @@ public class Book {
     private String author;
     private int code;
 
+    public void setTitle(String title) {
+        this.title =  title;
+    }
+
+    public int getCode () {
+        return code;
+    }
+
     public Book (String title, String author, int code) {
         this.title = title;
         this.author = author;
@@ -12,8 +20,8 @@ public class Book {
     }
 
     public String toString () {
-        return "Название: | " + title +
+        return "Название: " + title +
                 " | Автор: " + author +
-                " Код издания: " + code;
+                " | Код издания: " + code;
     }
 }

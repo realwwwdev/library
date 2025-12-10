@@ -7,5 +7,8 @@ public class Main {
         library.addBook("Война и мир", "Толстой", 10936);
         library.addBook("Мастер и Маргарита", "Булгаков", 10581);
         library.showBooks();
+
+        library.changeTitle(10724, "Война и мир [2 издание]");
+        library.showBooks();
     }
 }
