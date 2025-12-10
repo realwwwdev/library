@@ -80,7 +80,7 @@ public class Library {
         }
 
         if(matches == 0) {
-            System.out.println("Список книг с жанром: '" + genre + "'");
+            System.out.println("Книги с жанром: '" + genre + "' не найдены");
         }
     }
 
