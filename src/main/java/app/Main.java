@@ -10,5 +10,8 @@ public class Main {
 
         library.changeTitle(10724, "Война и мир [2 издание]");
         library.showBooks();
+
+        library.deleteBook(10724);
+        library.showBooks();
     }
 }

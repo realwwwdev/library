@@ -23,6 +23,17 @@ public class Library {
 
     }
 
+    public void deleteBook (int code) {
+        for (int i = 0; i < bookList.size(); i++) {
+            if (bookList.get(i).getCode() == code) {
+                bookList.remove(i);
+                System.out.println("Книга с кодом: " + code + " удалена");
+                return;
+            }
+        }
+        System.out.println("Книга с кодом: " + code + " не найдена");
+    }
+
     public void showBooks() {
         for (Book b : bookList) {
             System.out.println(b);
