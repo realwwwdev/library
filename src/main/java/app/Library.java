@@ -15,7 +15,7 @@ public class Library {
         for (Book book : bookList) {
             if (book.getCode() == code) {
                 book.setTitle(newTitle);
-                System.out.println("Название обновлено");
+                System.out.println("Название обновлено на '" + newTitle + "'");
                 return;
             }
         }

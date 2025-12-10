@@ -37,6 +37,7 @@ public class Book {
     public String toString () {
         return "Название: " + title +
                 " | Автор: " + author +
-                " | Код издания: " + code;
+                " | Код издания: " + code +
+                " | Жанр: " + genres;
     }
 }
