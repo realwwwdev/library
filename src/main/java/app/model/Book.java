@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Book {
     private String title;
-    private String author;
-    private int code;
-    private List<String> genres;
+    private final String author;
+    private final int code;
+    private final List<String> genres;
 
     public Book (String title, String author, int code, List<String> genres) {
         this.title = title;
@@ -29,9 +29,6 @@ public class Book {
 
     public String getAuthor () {
         return author;
-    }
-    public List<String> genres() {
-        return genres;
     }
 
     public List<String> getGenres() {return genres;}
