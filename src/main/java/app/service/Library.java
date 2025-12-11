@@ -1,6 +1,6 @@
 package app.service;
 
-import app.model.Book;
+import app.domain.Book;
 
 import java.util.ArrayList;
 import java.util.List;
